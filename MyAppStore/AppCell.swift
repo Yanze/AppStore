@@ -9,6 +9,27 @@
 import UIKit
 
 class AppCell: UICollectionViewCell {
+    
+    var app: App? {
+        didSet {
+            if let name = app?.name {
+                nameLabel.text = name
+            }
+            categoryLabel.text = app?.category
+            
+            if let price = app?.price {
+                priceLabel.text = "$\(price)"
+            } else {
+                priceLabel.text = ""
+            }
+            
+            if let imageName = app?.imageName {
+                imageView.image = UIImage(named: imageName)
+            }
+            
+        }
+    }
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupViews()
@@ -22,8 +43,8 @@ class AppCell: UICollectionViewCell {
         
         imageView.frame = CGRect(x: 0, y: 0, width: frame.width, height:frame.width)
         nameLabel.frame = CGRect(x: 0, y: frame.width + 2, width: frame.width, height: 40)
-        categoryLabel.frame = CGRect(x: 0, y: frame.width + 30, width: frame.width, height: 20)
-        priceLabel.frame = CGRect(x: 0, y: frame.width + 45, width: frame.width, height: 20)
+        categoryLabel.frame = CGRect(x: 0, y: frame.width + 35, width: frame.width, height: 20)
+        priceLabel.frame = CGRect(x: 0, y: frame.width + 55, width: frame.width, height: 20)
     }
     
     let imageView: UIImageView = {

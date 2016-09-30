@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E00B596F1D9EE45F0018C086 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00B596E1D9EE45F0018C086 /* Models.swift */; };
 		E0252D891D9C92A900437614 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0252D881D9C92A900437614 /* AppDelegate.swift */; };
 		E0252D8B1D9C92A900437614 /* FeaturedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0252D8A1D9C92A900437614 /* FeaturedViewController.swift */; };
 		E0252D8E1D9C92A900437614 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0252D8C1D9C92A900437614 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E00B596E1D9EE45F0018C086 /* Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		E0252D851D9C92A900437614 /* MyAppStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyAppStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0252D881D9C92A900437614 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E0252D8A1D9C92A900437614 /* FeaturedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 				E0252D8A1D9C92A900437614 /* FeaturedViewController.swift */,
 				E0252D9A1D9C97AC00437614 /* CategoryCell.swift */,
 				E0252D9C1D9DB58D00437614 /* AppCell.swift */,
+				E00B596E1D9EE45F0018C086 /* Models.swift */,
 				E0252D8C1D9C92A900437614 /* Main.storyboard */,
 				E0252D8F1D9C92A900437614 /* Assets.xcassets */,
 				E0252D911D9C92A900437614 /* LaunchScreen.storyboard */,
@@ -146,6 +149,7 @@
 				E0252D9D1D9DB58D00437614 /* AppCell.swift in Sources */,
 				E0252D891D9C92A900437614 /* AppDelegate.swift in Sources */,
 				E0252D9B1D9C97AC00437614 /* CategoryCell.swift in Sources */,
+				E00B596F1D9EE45F0018C086 /* Models.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
