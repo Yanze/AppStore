@@ -12,6 +12,36 @@ class AppCategory: NSObject {
     var name: String?
     var apps: [App]?
     
+    static func fetchFeaturedApps()  {
+        let urlString = "http://www.statsallday.com/appstore/featured"
+//        let urlString = "https://api.github.com/users/yanze"
+        
+        let config = URLSessionConfiguration.default
+        let session = URLSession(configuration: config)
+        let url = URL(string: urlString)
+        
+        let task = session.dataTask(with: url!, completionHandler: { (data, response, error) in
+            
+            if error != nil {
+                print(error)
+                return
+            }
+            else {
+                do {
+                    if let json = try JSONSerialization .jsonObject(with: data!, options: .allowFragments) as? [String: Any] {
+                        print(json)
+                    }
+                } catch {
+                    print("error")
+                }
+            }
+        })
+        task.resume()
+    }
+    
+    
+    
+    
     static func sampleAppCategories() ->[AppCategory] {
         let bestNewAppsCategory = AppCategory()
         bestNewAppsCategory.name = "Best New Apps"

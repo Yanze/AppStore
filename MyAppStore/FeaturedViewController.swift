@@ -17,7 +17,8 @@ class FeaturedViewController: UICollectionViewController, UICollectionViewDelega
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        appCategories = AppCategory.sampleAppCategories()
+//        appCategories = AppCategory.sampleAppCategories()
+        AppCategory.fetchFeaturedApps()
         
         collectionView?.backgroundColor = .white
         collectionView?.register(CategoryCell.self, forCellWithReuseIdentifier: cellId)
